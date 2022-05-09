@@ -2,10 +2,11 @@ body {
   background-color: black;
   color:whitesmoke;
   margin:0px;
-  background-image: url("assets/Moon_1.JPG");
+  /* background-image: url("assets/Moon_1.JPG");
   background-size: 100% ;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   font-family: 'Oxygen';
+  line-height: 1.25;
 }
 .header {
   text-align: left;
@@ -14,8 +15,13 @@ body {
 .content {
   text-align: justify;
   padding: 10px;
-  margin-left: 10px ;
+  margin: 0px 10px ;
   font-size: 18px;
+}
+.imgAlign{
+  width:30%;
+  height: auto;
+  float: right;
 }
 a {
   text-decoration: none;
@@ -27,21 +33,29 @@ a:hover{
   text-decoration: underline;
 }
 @media (max-width: 480px) {
-  body {
+  /* body {
       background-image: url(assets/Moon_2.JPG);
       background-position-y: 11vh;;
+  } */
+  .imgAlign{
+    float: none;
+    width: 80%;
+    padding: 2% 10%;
   }
 }
-@media (min-width:481px) and (max-width:1024px){
-  body{
+@media (min-width:481px) and (max-width:900px){
+  /* body{
     background-position-y: 7vh ;
+  } */
+  .imgAlign{
+    float: none;
+    width: 80%;
+    padding: 2% 10%;
   }
-  .content{
-    width:50%;
-  }
-}
-@media (min-width:1025px){
+}/* 
+@media (min-width:901px){
   body{
     background-position-y: -10vh ;
   }
-}
+  .imgAlign{}
+} */

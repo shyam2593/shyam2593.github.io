@@ -1,64 +1,128 @@
 body {
   background-color: black;
-  color:whitesmoke;
-  margin:0px;
+  color: whitesmoke;
+  margin: 0px;
   /* background-image: url("assets/Moon_1.JPG");
   background-size: 100% ;
   background-repeat: no-repeat; */
-  font-family: 'Oxygen';
+  font-family: "Oxygen";
   line-height: 1.25;
 }
 .header {
   text-align: left;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 .content {
   text-align: justify;
   padding: 10px;
-  margin: 0px 10px ;
+  margin: 0px 10px;
   font-size: 18px;
 }
-.imgAlign{
-  width:30%;
+.imgAlign {
+  width: 30%;
   height: auto;
   float: right;
 }
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+.visible-desktop {
+  display: inline;
+}
+.hidden-desktop {
+  display: none;
+}
 a {
   text-decoration: none;
-  color:#6a8ed6;
-  ;
+  color: #6a8ed6;
 }
-a:hover{
-  color:rgb(200,10,10);
+a:hover {
+  color: rgb(200, 10, 10);
   text-decoration: underline;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 480px) {
   /* body {
       background-image: url(assets/Moon_2.JPG);
       background-position-y: 11vh;;
   } */
-  .imgAlign{
-    display:block;
+  .header {
+    text-align: justify;
+  }
+  .imgAlign {
     margin: auto;
     float: none;
     padding: 2% 10%;
-    min-width: 250px; 
+    min-width: 250px;
+  }
+  .visible-desktop {
+    display: none;
+  }
+  .hidden-desktop {
+    display: block;
   }
 }
-@media (min-width:481px) and (max-width:900px){
+@media (min-width: 481px) and (max-width: 900px) {
   /* body{
     background-position-y: 7vh ;
   } */
-  .imgAlign{
-    display:block;
+  .imgAlign {
     margin: auto;
     float: none;
     padding: 2% 10%;
+    min-width: 350px;
   }
-}/* 
-@media (min-width:901px){
-  body{
-    background-position-y: -10vh ;
+  .visible-desktop {
+    display: none;
   }
-  .imgAlign{}
-} */
+  .hidden-desktop {
+    display: block;
+  }
+}

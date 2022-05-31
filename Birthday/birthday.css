@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  color: rgb(24, 24, 24);
+}
+p {
+  margin: 10px;
+}
+.card {
+  height: 340px;
+  width: 250px;
+  position: relative;
+  transition: 1s linear;
+  transform-style: preserve-3d;
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  font-family: "Lobster", cursive;
+  border-radius: 10px;
+  position: absolute;
+}
+.front {
+  background: linear-gradient(#08aeea, #2af598);
+  z-index: 2;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.back {
+  background: linear-gradient(#fff3c4, #f47bcf);
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.container {
+  perspective: 400px;
+}
+.cake {
+  width: 126px;
+  display: block;
+  margin: auto;
+}

@@ -1,6 +1,6 @@
 body {
   background-color: rgb(39, 39, 39);
-  color:whitesmoke;
+  color: whitesmoke;
   font-family: "Oxygen";
 }
 .header {
@@ -57,12 +57,12 @@ body {
   font-size: 18px;
   color: #6392b7;
 }
-td.month{
+td.month {
   text-align: right;
   font-style: italic;
   font-weight: bold;
 }
-.certificates{
+.certificates {
   font-style: italic;
 }
 table,

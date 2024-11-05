@@ -10,8 +10,8 @@ p {
   margin: 10px;
 }
 .card {
-  height: 340px;
-  width: 250px;
+  height: 360px;
+  width: 300px;
   position: relative;
   transition: 1s linear;
   transform-style: preserve-3d;
